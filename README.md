@@ -9,7 +9,7 @@ This version:
 
 - is written in C (which means you can compile it to an exe, and send it to your friends to prank them)
 
-- is very simple (it's just 14 lines of code with no dependencies)
+- is very simple (it's just 11 lines of code with no dependencies)
 
 - runs natively only on Windows (because it uses the win32 API to create the pop-up), but you can use Wine to run it on Linux/macOS/whatever
 
