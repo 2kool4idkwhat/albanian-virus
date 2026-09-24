@@ -19,8 +19,10 @@ Compiling
 If you have [Zig][2] installed, you can just run this:
 
 ```sh
-zig cc albanian-virus.c -target x86_64-windows-gnu -o virus.exe
+zig cc albanian-virus.c -Wl,--subsystem,windows -target x86_64-windows-gnu -o virus.exe
 ```
+
+If you're on Windows, remove the `-target x86_64-windows-gnu` part as that's only needed when cross-compiling
 
 Other C compilers should also work, but I didn't bother testing them since `zig cc` is the only one that can easily cross-compile (I don't use Windows)
 
